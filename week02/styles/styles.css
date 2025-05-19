@@ -8,6 +8,26 @@ main {
     color: #ffffff;
     text-align: center;
 }
+nav {
+    padding: 0;
+}
+nav a{
+    color: navy;
+}
+
+h1 {
+    padding: 0rem;
+    color: rgb(200, 200, 0);
+    margin: 1rem;
+    text-align: center;
+}
+
+h2 {
+    padding: 0rem;
+    color: rgb(200, 200, 0);
+    margin: 1rem;
+    text-align: center;
+}
 aside {
     width: 20rem;
     margin: 1rem;
