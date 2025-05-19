@@ -1,0 +1,24 @@
+main {
+	margin: 10px;
+    border: 5px solid rgb(0 0 0 / 0.2%);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+img {
+	width: 200;
+    height: auto;
+    position: relative;
+    margin: 10px;
+    border: 2px soldi rgb(0 0 0 / 0.2%)
+}
+
+blockquote {
+	
+}
+
+cite {
+	
+}
