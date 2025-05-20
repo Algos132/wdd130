@@ -75,3 +75,9 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+footer p {
+    width: 20rem;
+    height: auto;
+    padding: 0;
+}
