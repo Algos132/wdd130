@@ -1,10 +1,17 @@
+:root {
+    --section-background-color: #000030;
+    --section-color: rgb(200, 200, 0);
+    --section-border: 1px solid rgb(0, 0, 0);
+
+}
+
 main {
     max-width: 840px;
     width: 20rem;
     margin: 1rem;
     border: 10px solid rgba(50, 50, 50, 0.5);
     padding: 1rem;
-    background-color: #000030;
+    background-color: var(--section-background-color);
     color: #ffffff;
     text-align: center;
 }
@@ -18,7 +25,7 @@ nav a{
 
 h1 {
     padding: 0rem;
-    color: rgb(200, 200, 0);
+    color: var(--section-color: rgb(200, 200, 0));
     margin: 1rem;
     text-align: center;
 }
@@ -34,7 +41,7 @@ aside {
     margin: 1rem;
     border: 10px solid rgba(50, 50, 50, 0.5);
     padding: 1rem;
-    background-color: #000030;
+    background-color: var(--section-background-color);
     color: #ffffff;
     text-align: center;
 }
@@ -45,7 +52,7 @@ aside img {
     margin: 1rem;
     border: 1px solid rgb(0, 0, 0);
     padding: 0.5rem;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: var(--section-background-color);
 }
 main img{
     width: 10rem;
