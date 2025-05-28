@@ -34,13 +34,14 @@ article {
     color: var(--accent-color2);
     opacity: 0.75;
     position: absolute;
-    top: 100px;
-    width: 200px;
+    top: 350px;
+    width: 810px;
+    height: auto;
 }
 
 .hero article img {
     float: right;
-    width: 125;
+    width: 125px;
 }
 
 h1 {
