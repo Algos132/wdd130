@@ -10,7 +10,7 @@
 
 * {
     margin: 10px;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;;
     color: var(--accent-color2);
 }
