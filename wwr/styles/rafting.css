@@ -9,9 +9,33 @@
 }
 
 * {
-    margin: 0;
+    margin: 10;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;;
+    color: var(--accent-color2);
+}
+
+header {
+	margin: 20px;
+    padding: 5px;
+	display: grid;
+	grid-template-columns: 120px 1fr;
+    grid-template-rows: 1fr;
+	align-items: center;
+    border-bottom: 5px solid var(--accent-color2);
+    border-left: 5px solid var(--accent-color2);
+    border-right: 5px solid var(--primary-color);
+    border-top: 5px solid var(--primary-color);
+    background-color: var(--accent-color1);
+    color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: flex-end;
+    background-color: var(--accent-color1);
+    color: var(--primary-color);
 }
 
 header img {
@@ -21,12 +45,27 @@ header img {
 
 .hero {
     position: relative;
+
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.history {
+    width: 150%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-self: center;
+    background-color: var(--accent-color3);
+}
+
+.history img {
+    width: 300px;
 }
 
 article {
@@ -55,14 +94,53 @@ h1 {
     color: var(--accent-color2);
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--primary-color);
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
-header, main, footer {
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+}
+
+section img {
+    width: 200px;
+}
+
+section {
+    margin: 0px;
+    background-color: var(--accent-color3);
+}
+
+.adventure {
+    width: 150%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+main {
     width: 840px;
     margin: 0 auto;
+}
+
+footer {
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 5px solid var(--accent-color2);
+    border-right: 5px solid var(--accent-color2);
+    border-bottom: 5px solid var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    background-color: var(--accent-color1);
 }
 
 h1, h2 {
@@ -74,6 +152,8 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia a {
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
     text-decoration: none;
 }
