@@ -33,6 +33,7 @@ header, footer {
 footer {
     display: flex;
     justify-content: space-around;
+    color: var(--primary-color);
 }
 
 header nav {
@@ -121,7 +122,7 @@ article {
 }
 
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--header-font);
     top: 20px;
     padding: 16px;
@@ -141,7 +142,11 @@ h2 {
     font-size: 40px;
 }
 
-.contact h1 {
+h3 {
+    font-size: 50px;
+}
+
+.contact h1, h3 {
     opacity: 100%;
 }
 
@@ -171,10 +176,13 @@ section img {
     width: 200px;
 }
 
-section {
+section, .team {
+    display: block;
+    align-self: center;
+    border: 5px, solid, var(--primary-color);
     margin: 0px;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color1);
 }
 
 .adventure {
@@ -189,17 +197,18 @@ section {
     padding: 10px;
 }
 
-.employee {
-    margin: 10px;
+.employee, .team {
+    margin: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    background-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
-.employee h1 {
+.employee h2 {
+    opacity: 100%;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -208,6 +217,11 @@ section {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.employee p {
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 .employee img {
