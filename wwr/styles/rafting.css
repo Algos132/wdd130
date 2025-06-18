@@ -73,11 +73,17 @@ main {
     height: auto;
 }
 
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
 .villain {
+    padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .villain iframe {
@@ -114,10 +120,6 @@ article {
     height: auto;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-}
 
 h1, h2 {
     font-family: var(--header-font);
@@ -125,13 +127,18 @@ h1, h2 {
     padding: 16px;
     text-align: center;
     opacity: 0.75;
-    background-color: var(--secondary-color);
     color: var(--accent-color2);
 }
 
 h1 {
+    font-size: 50px;
+    background-color: var(--secondary-color);
     position: absolute;
     width: 100%;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 .contact h1 {
@@ -153,12 +160,11 @@ body {
 }
 
 .info h2 {
-    width: 500px;
+    width: 1000px;
     display: flex;
     align-items: center;
     opacity: 100%;
     color: var(--accent-color);
-    background-color: var(--secondary-color);
 }
 
 section img {
@@ -197,8 +203,11 @@ section {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: 0;
+    grid-row-end: 2;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .employee img {
@@ -207,20 +216,16 @@ section {
 }
 
 form {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     text-align: center;
+    padding: 10px;
+    padding-top: 5px;
 }
 
-fieldset {
+fieldset, select {
     width: 350px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-select {
-    width: 350px;
     justify-content: center;
     align-items: center;
 }
