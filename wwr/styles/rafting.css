@@ -15,19 +15,24 @@
     color: var(--accent-color2);
 }
 
-header {
+header, footer {
 	margin: 20px;
     padding: 5px;
 	display: grid;
 	grid-template-columns: 120px 1fr;
     grid-template-rows: 1fr;
 	align-items: center;
-    border-bottom: 5px solid var(--accent-color2);
-    border-left: 5px solid var(--accent-color2);
-    border-right: 5px solid var(--primary-color);
-    border-top: 5px solid var(--primary-color);
+    border-top: 5px solid var(--accent-color2);
+    border-right: 5px solid var(--accent-color2);
+    border-bottom: 5px solid var(--primary-color);
+    border-left: 5px solid var(--primary-color);
     background-color: var(--accent-color1);
     color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav {
@@ -41,6 +46,11 @@ header nav {
 header img {
     width: 125px;
     height: auto;
+}
+
+.contact {
+    width: 1500px;
+    margin: 0 auto;
 }
 
 main {
@@ -59,25 +69,25 @@ main {
 }
 
 .villain {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    background-color: var(--accent-color3);
 }
 
 .villain iframe {
-    display: flex;
-    justify-content: left;
-    width: 75%; 
-    height: auto;
+    width: 500px; 
+    height: 450px;
 }
 
-.villain p1 {
+.villain p {
     display: block;
     align-items: center;
     box-align: center;
     text-align: left;
 }
 
-p1 {
+p {
     display: block;
     align-content: center;
 }
@@ -111,6 +121,7 @@ article {
     width: 125px;
 }
 
+
 h1, h2 {
     font-family: var(--header-font);
     top: 20px;
@@ -135,6 +146,15 @@ body {
     background-color: var(--secondary-color);
 }
 
+.info h2 {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    align-items: flex-start;
+    color: var(--accent-color2);
+}
+
 section img {
     width: 200px;
 }
@@ -156,14 +176,12 @@ section {
     padding: 10px;
 }
 
-.adventure2 {
-    width: 150%;
-    padding: 10px;
+.employee {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 0fr 1fr 0fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     justify-items: center;
-    justify-self: center;
-    padding: 10px;
 }
 
 form {
@@ -172,8 +190,45 @@ form {
 }
 
 fieldset {
+    width: 350px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input, select {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.check {
+    width: 15px;
+    height: 100%;
+}
+
+.message {
+    display: flex;
+    width: 200%;
+    height: 200%;
+    justify-content: center;
+}
+
+textarea {
+    display: flex;
+    background-color: var(--accent-color2);
+    color: var(--primary-color);
+    width: 1425px;
+    height: auto;
+}
+
+button {
+    margin-left: 1000px;
+    display: flex;
+    justify-self: right;
+    align-self: center;
+    color: var(--primary-color)
 }
 
 select {
@@ -186,22 +241,7 @@ option {
     background-color: var(--accent-color2);
 }
 
-.names input {
-    width: 300px;
-}
 
-footer {
-    margin: 20px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top: 5px solid var(--accent-color2);
-    border-right: 5px solid var(--accent-color2);
-    border-bottom: 5px solid var(--primary-color);
-    border-left: 5px solid var(--primary-color);
-    background-color: var(--accent-color1);
-}
 
 nav, p, section, article {
     margin: 16px;

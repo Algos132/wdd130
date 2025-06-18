@@ -22,47 +22,43 @@
                 <a href="contact.html">Contact Us</a>
             </nav>
         </header>
-        <main>
+        <main class="contact">
             <h1>Contact Us</h1>
             <div class="villain">
                 <iframe src="https://www.google.com/maps/@40.412398,-111.4974842,14.22z?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"></iframe>
                 <div class="info">
-                    <p1>Address: 123 WE 1234 NS Town, ST</p1>
-                    <p1></p1>
-                    <p1>Phone: 123-123-1234</p1>
-                    <p1></p1>
-                    <p1>Email:<a href="mailto:">raftingemail@email.com></a></p1>
+                    <h2>Address: 123 WE 1234 NS Town, ST</h2>
+                    <h2>Phone: 123-123-1234</h2>
+                    <h2>Email:<a href="mailto:">raftingemail@email.com></a></h2>
                 </div>
             </div>
                 <form>
-                    <fieldset class="names">
+                    <fieldset>
                         <legend>Contact Information</legend>
                         <label for="fullname">Name</label>
                         <input type="text" id="fullname" name="fullname">
                         <label for="useremail">Email</label>
                         <input type="email" id="useremail" name="useremail">
-                    </fieldset>
-                    <fieldset class="reason">
                         <legend>Contact Reason</legend>
                         <select id="reason" name="reason">
                             <option value="general" id="general" name="general">General Question</option>
                             <option value="reservation" id="reservation" name="reservation">Reservation Question</option>
                             <option value="website" id="website" name="website">Website Suggestion</option>
                         </select>
+                        <legend class="message">Message</legend>
+                        <textarea id="Message" name="message"></textarea>
+                        <input class="check" type="checkbox">Please sign me up to the monthly newsletter </input>
+                        <button type="submit">Submit Form</button>
                     </fieldset>
                 </form>
-                <h2>Meet the Team</h2>
-            <section class="adventure2">
+            <h2 class="team">Meet the Team</h2>
+            <section class="employee">
                 <img src="images/Employee1.png" alt="John Doe">
-                <img src="" alt="">
                 <img src="images/Employee3.png" alt="Jane Doe">
-                <img src="" alt="">
                 <img src="images/Employee2.png" alt="Doe John">
                 <p>John Doe</p>
-                <p></p>
                 <p>Jane Doe</p>
-                <p></p>
-                <p>Doe John</p>
+                <p>John Doe</p>
             </section>
         </main>
         <footer>
@@ -78,7 +74,6 @@
                 <a href="https://instagram.com">
                     <img src="images/instagram.png" alt="Instagram">
                 </a>
-                
             </nav>
         </footer>
     </body>
