@@ -179,7 +179,7 @@ section img {
 section, .team {
     display: block;
     align-self: center;
-    border: 5px, solid, var(--primary-color);
+    border: 5px solid var(--primary-color);
     margin: 0px;
     width: 100%;
     background-color: var(--accent-color1);
@@ -212,7 +212,7 @@ section, .team {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 0;
+    grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
     justify-content: center;
