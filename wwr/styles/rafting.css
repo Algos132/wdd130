@@ -174,14 +174,10 @@ section {
     background-color: var(--accent-color3);
 }
 
-h3 img {
-    width: 200px;
-    text-align: center;
-}
+
 
 h3 {
-    margin: 0px;
-    background-color: var(--accent-color3);
+
 }
 
 
@@ -198,11 +194,18 @@ h3 {
 }
 
 .employee {
+    margin: 0px;
+    background-color: var(--accent-color3);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
+}
+
+.employee img {
+    width: 200px;
+    text-align: center;
 }
 
 form {
