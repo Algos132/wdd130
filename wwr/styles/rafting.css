@@ -218,7 +218,7 @@ fieldset {
     align-items: center;
 }
 
-input, select {
+select {
     width: 350px;
     justify-content: center;
     align-items: center;
@@ -230,10 +230,9 @@ input, select {
 }
 
 .message {
-    display: flex;
     width: 200%;
-    height: 200%;
-    justify-content: center;
+    height: 500%;
+    align-self: top;
 }
 
 textarea {
