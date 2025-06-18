@@ -43,9 +43,13 @@ header img {
     height: auto;
 }
 
+main {
+    width: 840px;
+    margin: 0 auto;
+}
+
 .hero {
     position: relative;
-
 }
 
 .hero img {
@@ -54,9 +58,33 @@ header img {
     height: auto;
 }
 
+.villain {
+    display: flex;
+    align-items: center;
+}
+
+.villain iframe {
+    display: flex;
+    justify-content: left;
+    width: 75%; 
+    height: auto;
+}
+
+.villain p1 {
+    display: block;
+    align-items: center;
+    box-align: center;
+    text-align: left;
+}
+
+p1 {
+    display: block;
+    align-content: center;
+}
+
 .history {
     width: 150%;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -83,8 +111,8 @@ article {
     width: 125px;
 }
 
-h1 {
-    position: absolute;
+h1, h2 {
+    font-family: var(--header-font);
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -94,9 +122,12 @@ h1 {
     color: var(--accent-color2);
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
+.hero h1 {
+    position: absolute;
+}
+
+.villain h1 {
+    display: absolute;
 }
 
 body {
@@ -125,9 +156,38 @@ section {
     padding: 10px;
 }
 
-main {
-    width: 840px;
-    margin: 0 auto;
+.adventure2 {
+    width: 150%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr 0fr 1fr;
+    justify-items: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+form {
+    background-color: var(--accent-color3);
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    display: block;
+    position: relative;
+}
+
+option {
+    color: var(--primary-color);
+    background-color: var(--accent-color2);
+}
+
+.names input {
+    width: 300px;
 }
 
 footer {
@@ -141,10 +201,6 @@ footer {
     border-bottom: 5px solid var(--primary-color);
     border-left: 5px solid var(--primary-color);
     background-color: var(--accent-color1);
-}
-
-h1, h2 {
-    font-family: var(--header-font);
 }
 
 nav, p, section, article {
