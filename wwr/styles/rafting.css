@@ -326,7 +326,7 @@ fieldset, select {
 
 .message {
     color: var(--accent-color2);
-    width: 200%;
+    width: 150%;
     height: 500%;
 }
 
@@ -367,6 +367,14 @@ button {
 
 .call img {
     padding-bottom: 75%;
+}
+
+.call a {
+    font-size: 35px;
+    border: 3px solid #aaaaaa;
+    border-left: 3px solid #c0c0c0;
+    border-top: 3px solid #c0c0c0; 
+    background-color: var(--accent-color2);
 }
 
 .call button {
